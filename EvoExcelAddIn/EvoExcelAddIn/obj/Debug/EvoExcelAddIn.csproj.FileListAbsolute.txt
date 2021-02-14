@@ -1,0 +1,15 @@
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\bin\Debug\EvoExcelAddIn.dll
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\bin\Debug\EvoExcelAddIn.pdb
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\bin\Debug\EvoExcelAddIn.dll.manifest
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\bin\Debug\EvoExcelAddIn.vsto
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\obj\Debug\EvoExcelAddIn.csprojResolveAssemblyReference.cache
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\obj\Debug\EvoExcelAddIn.Properties.Resources.resources
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\obj\Debug\EvoExcelAddIn.csproj.GenerateResource.Cache
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\obj\Debug\EvoExcelAddIn.csproj.CoreCompileInputs.cache
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\obj\Debug\EvoExcelAddIn.dll
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\obj\Debug\EvoExcelAddIn.pdb
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\obj\Debug\EvoExcelAddIn.EvoTrial.resources
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Bhavi\source\repos\EvoExcelAddIn\EvoExcelAddIn\obj\Debug\EvoExcelAddIn.Forms.About.resources
