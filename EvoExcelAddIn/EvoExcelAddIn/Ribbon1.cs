@@ -30,43 +30,6 @@ namespace EvoExcelAddIn
             ExcelWriter<Comments> myExcel = new CommentWriter();
             myExcel.WriteDateToExcel("DATA", dataObj.ToList(), "A1", "C1");
 
-            //nativeWorkbook = Globals.ThisAddIn.Application.ActiveWorkbook;
-            //if (nativeWorkbook != null)
-            //{
-            //    Microsoft.Office.Tools.Excel.Workbook vstoWorkbook =
-            //        Globals.Factory.GetVstoObject(nativeWorkbook);
-            //}
-
-            //Worksheet newWorksheet = nativeWorkbook.GetWorksheetByName("DATA");
-
-            //if (newWorksheet != null)
-            //{
-            //    newWorksheet.Cells.Clear();
-            //}
-            //else
-            //{
-            //    newWorksheet = (Worksheet)nativeWorkbook.Worksheets.Add();
-            //    newWorksheet.Name = "DATA";
-            //}
-
-            //var dataObj = await GetData();
-
-            //System.Data.DataTable data = (System.Data.DataTable)JsonConvert.DeserializeObject(JsonConvert.SerializeObject(dataObj), (typeof(System.Data.DataTable)));
-
-            //string[,] importString = new string[data.Rows.Count, data.Columns.Count];
-            ////populate the string[,] however you can
-            //for (int r = 0; r < data.Rows.Count; r++)
-            //{
-            //    for (int c = 0; c < data.Columns.Count; c++)
-            //    {
-            //        importString[r, c] = data.Rows[r][c].ToString();
-            //    }
-            //}
-
-            //Range oRange = newWorksheet.Range[newWorksheet.Cells[1, 1],
-            //            newWorksheet.Cells[data.Rows.Count, data.Columns.Count]];
-            //oRange.Value = importString;
-
         }
 
         public async Task<IList<Comments>> GetData()
@@ -92,19 +55,22 @@ namespace EvoExcelAddIn
 
         private void btnLinkdata_Click(object sender, RibbonControlEventArgs e)
         {
-
+            //validate if sheet DATA exists
             if (!ExcelManager.SheetExists("DATA"))
             {
                 MessageBox.Show("Data Worksheet does not exists, try to get data first & try again.");
                 return;
             }
 
+            //Activate Data sheet to take last row.
             ExcelManager.ActivateExcel("DATA",false);
             var last = ExcelManager.GetLastRowCol();
             string lastRow = "A" + Convert.ToInt32(last[0]-1);
 
+            //Activate Active sheet.
             ExcelManager.ActivateExcel(null,true);
 
+            // Active sheet can not be same as DATA sheet.
             if (ExcelManager._excelSheet.Name == "DATA")
             {
                 MessageBox.Show("You can not reference same cells for formulaes, please try with new worksheet.");
